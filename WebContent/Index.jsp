@@ -20,20 +20,6 @@
     <title>Sitio de Sistemas</title>
   </head>
   <body>
-  <%
-  		Connection con;
-  		String url = "jdbc:mysql://localhost:3306/formulario";
-  		String Driver = "com.mysql.jdbc.Driver";
-  		String user = "root";
-  		String clave = "";
-  		Class.forName(Driver);
-  		con = DriverManager.getConnection(url, user, clave);
-  		PreparedStatement ps;
-  		//Emnpezamos Listando los Datos de la Tabla Usuario
-  		Statement smt;
-  		ResultSet rs;
-  		smt = con.createStatement();
-  	%>
     <!-- ir arriba-->
     <span class="ir-arriba glyphicon glyphicon-menu-up"><svg class="bi bi-arrow-bar-up" width="1.4em" height="1.4em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
       <path fill-rule="evenodd" d="M11.354 5.854a.5.5 0 000-.708l-3-3a.5.5 0 00-.708 0l-3 3a.5.5 0 10.708.708L8 3.207l2.646 2.647a.5.5 0 00.708 0z" clip-rule="evenodd"/>
@@ -42,20 +28,20 @@
 
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-      <a class="navbar-brand" href="index.html"><img src="logo_utp_web.png"></a>
+      <a class="navbar-brand" href="index.html"><img src="logo.png" height="100px"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav">
           <li class="nav-item active">
-            <a class="nav-link" href="index.html">Inicio</a>
+            <a class="nav-link" href="Index.jsp">Inicio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#header">Carrera</a>
+            <a class="nav-link" href="#header">Tienda</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#certificaciones">Grados y Certificaciones</a>
+            <a class="nav-link" href="#certificaciones">Ofrecemos</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#contact">Ayuda</a>
@@ -86,22 +72,22 @@
           </ol>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <a href="https://www.utp.edu.pe/" target="black"><img class="d-block w-100" src="maxresdefault.jpg" alt="First slide" ></a>
+              <a href="https://www.utp.edu.pe/" target="black"><img class="d-block w-100" src="images.jpg" alt="First slide" ></a>
               <div class="carousel-caption d-none d-md-block">
               </div>
             </div>
             <div class="carousel-item">
-              <a href="https://www.utp.edu.pe/arequipa" target="black"><img class="d-block w-100" src="imagensedearequipa.jpg" alt="Second slide" ></a>
+              <a href="https://www.utp.edu.pe/arequipa" target="black"><img class="d-block w-100" src="77122552-hong-kong-circa-noviembre-de-2016-interior-de-una-tienda-de-electrónica-en-hong-kong-.jpg" alt="Second slide" ></a>
               <div class="carousel-caption d-none d-md-block" style="background-color: whitesmoke;">
-                <h5 style="color: black;">Utp Sede Arequipa</h5>
-                <p style="color: black;">Sede de la utp Arequipa Tacna y Arica</p>
+                <h5 style="color: black;"></h5>
+                <p style="color: black;"></p>
               </div>
             </div>
             <div class="carousel-item">
-              <a href="https://www.utp.edu.pe/sites/default/files/sistemas_e_informatica_final-malla.pdf" target="black"><img class="d-block w-100" src="sistemas_e_informatica_final-malla.jpg" alt="Second slide" ></a>
+              <a href="https://www.utp.edu.pe/sites/default/files/sistemas_e_informatica_final-malla.pdf" target="black"><img class="d-block w-100" src="antihurtos-para-electronica.jpg" alt="Second slide" ></a>
               <div class="carousel-caption d-none d-md-block" style="background-color: whitesmoke;">
-                <h5 style="color: black;">Malla curricular</h5>
-                <p style="color: black;">Malla curricular completa de Ing de sistemas</p>
+                <h5 style="color: black;"></h5>
+                <p style="color: black;"></p>
               </div>
             </div>
           </div>
@@ -128,14 +114,11 @@
           </div>
           <div class="col-md-6 col-sm-6 header-content-right">
             <div class="content-right">
-              <h1 class="display-4">CARRERA</h1>
-              <p class="mt-5">Domina sistemas informáticos, redes y conectividad, y seguridad informática</p>
-              <p>Diseña soluciones viables para problemas complejos</p>
-              <p>Aplica con eficiencia las Tecnologías de la Información y Comunicaciones (TIC) desde un punto de vista ético-sistémico y de costo-beneficio</p>
-              <p>Conceptualiza, planifica, provee y evalúa servicios puntuales de consultoría informática centrados en las necesidades de los clientes, con un enfoque en soluciones y una clara línea comercial</p>
-              <p>Participa en proyectos de diseño e implementación de redes y conectividad</p>
-              <p>Garantiza que los sistemas TIC de una organización funcionen de forma adecuada, sean seguros y estén adecuadamente instalados, documentados, personalizados, mantenidos y actualizados</p>
-              <a href="https://www.utp.edu.pe/arequipa/carreras/carreras-ingenieria/ingenieria-sistemas-e-informatica" class="btn btn-outline-secondary header-btn btn-lg mt-2">Leer mas</a>
+              <h1 class="display-4">Tienda</h1>
+              <p class="mt-5">Somos una tienda que da su servicio tanto de venta como de arreglo de pc lo más importante es el cliente damos 
+              los mejores precios y los mejores componentes tanto como los accesorios teclados mouses y lo que desees de computo somos nuevos 
+              en el mercado así que queremos  que nos conozcan dar una buena inpresion</p>
+            <!--  <a href="https://www.utp.edu.pe/arequipa/carreras/carreras-ingenieria/ingenieria-sistemas-e-informatica" class="btn btn-outline-secondary header-btn btn-lg mt-2">Leer mas</a> -->
             </div>
           </div>
         </div>
@@ -145,21 +128,17 @@
     <section id="certificaciones">
       <div class="container">
         <p class="h2 mb-2 center-block" style="text-align: center;">
-          GRADOS Y CERTIFICACIONES
+          Ofrecemos
         </p>
-        <p class="h4">GRADOS</p>
-        <p>La UTP otorga a nombre de la Nación:</p>
-        <p> Grado Académico de Bachiller en Ingeniería de Sistemas e Informática</p> 
-         <p> Título Profesional de Ingeniero de Sistemas e Informática</p>
+        
+        <p>Laptops</p>
+        <p>Tablets</p> 
+        <p>Monitores</p>
+        <p>Accesorios Computación</p>
+        <p>Audifonos</p> 
+        <p>Parlantes</p>
+        <p>Teclados</p>
 
-         <p class="h4">CERTIFICACIONES</p>
-         <p>Certificación Tutor STEM - Física</p>
-         <p>Certificación Tutor STEM - Matemática</p> 
-         <p>Certificación Tutor STEM - Algorítmica</p>
-         <p>Excel Intermedio</p>
-         <p>Soporte Técnico de Computadoras</p>
-         <p>Certificaciones Modulares CISCO (CCENT) </p>
-         <p>Desarrollador de Aplicaciones Móviles </p>
       </div>
     </section>
 
@@ -172,13 +151,7 @@
             </div>  
           </div>
             <div class="col-md-5 formulario">
-            <%
-            	String nombre=request.getParameter("nombre");
-	            String email=request.getParameter("email");
-	            String mensaje=request.getParameter("mensaje");
-	            smt.executeUpdate("INSERT INTO `enviar`(`Nombre`, `Correo`, `Mensaje`) VALUES ('"+nombre+"','"+email+"','"+mensaje+"')"); 
-            %>
-              <form class="card mt-4" action="Index.jsp" method="post">
+              <form class="card mt-4" action="Enviar.jsp" method="post">
                 <div class="card-body">
                   <div class="form-group">
                     <input type="text" class="form-control"   placeholder="Nombre" name="nombre">
